@@ -41,7 +41,7 @@
 <li>Título maior que 5 caracteres</li>
 <li>Descrição maior que 10 caracteres</li>
 <li>Data Inicial (Livre para utilizar bibliotecas de picker se necessário)</li>
-vData Final não pode ser menor que a data inicial</li>
+<li>Data Final não pode ser menor que a data inicial</li>
 </ul>
 <b>Utilizar:</b>
 <ul>
