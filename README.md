@@ -46,7 +46,7 @@ vData Final não pode ser menor que a data inicial</li>
 <b>Utilizar:</b>
 <ul>
 <li>Typescript</li>
-<li>Validação de formilário (Formik ou unform - de preferência a segunda opção)</li>
+<li>Validação de formulário (Formik ou unform - de preferência a segunda opção)</li>
 <li>Estilização com styled-components</li>
 </ul>
 <b>Diferenciais:</b>
