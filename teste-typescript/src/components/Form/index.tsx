@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./styles.css";
 import Input from "../Input";
+import ToDoList from '../ToDoList';
+
 
 interface Props {}
 
@@ -82,6 +84,14 @@ export default class Form extends Component<Props, State> {
         />
         <button>Adicionar</button>
       </form>
+  
+      // <ToDoList
+      // item
+      // description
+      // initialDate
+      // initialTime
+      // finalDate
+      // finalTime/>
     );
   }
 }
