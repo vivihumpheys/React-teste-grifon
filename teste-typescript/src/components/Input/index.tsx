@@ -5,7 +5,7 @@ interface Props {
   type: string;
   name: string;
   placeholder: string;
-  value: undefined;
+  value: any;
   onChange: any
 }
 
