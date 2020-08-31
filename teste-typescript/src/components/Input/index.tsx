@@ -11,7 +11,7 @@ interface Props {
 
 const Input: React.FC<Props> = ({ type, name, placeholder, value, onChange }) => {
   return (
-    <input onChange={onChange} type={type} name={name} placeholder={placeholder} value={value} />
+    <input className='inputForm' onChange={onChange} type={type} name={name} placeholder={placeholder} value={value} />
   );
 };
 
