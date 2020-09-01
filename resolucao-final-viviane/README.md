@@ -24,7 +24,7 @@ Para a estilização dos componentes e página, utilizei CSS.
 
 \*Para manipular o valor de cada input, usei o evento onChange, que chama a função HandleChange, correspondente a cada input diferente.
 
-\*no retorno da claaa Form, temos os componentes Input e uma lista com as tarefas adicionadas, através de uma função .map().
+\*no retorno da class Form, temos os componentes Input e uma lista com as tarefas adicionadas, através de uma função .map().
 
 \*Por fim, adicionei folha de estilo em cada componente para customizar o layout da aplicação com CSS puro.
 
