@@ -1,0 +1,53 @@
+.mainForm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: coral;
+}
+
+.inputForm-textarea{
+    text-align: center;
+    width: 272px;
+    height: 84px;
+   }
+
+.buttonForm-submit{
+    padding: 10px;
+    background-color: goldenrod;
+    border-radius: 10px;
+    margin-top: 13px;
+}
+
+.buttonForm-submit:hover{
+  font-weight: bold;
+}
+
+
+
+.toDoList-container--box{
+    display: flex;
+    justify-content: center;
+}
+
+.toDoList-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.toDoList-item{
+    list-style: none;
+     color: black;
+  } 
+
+.toDoList-item--dateTime{
+    display: flex;
+    justify-content: center;
+}
