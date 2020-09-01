@@ -61,7 +61,8 @@ export default class Form extends Component<Props, State> {
 
   handleClick(e: any) {
     e.preventDefault();
-    const item: object = {
+
+      const item: object = {
       inputToDo: this.state.inputToDo,
       inputDescription: this.state.inputDescription,
       initialDate: this.state.initialDate,
@@ -106,14 +107,15 @@ export default class Form extends Component<Props, State> {
             type="text"
             name="inputToDo"
             placeholder="Insira uma tarefa"
-            value={this.state.inputToDo}
+            value={inputToDo}
           />
+          
           <textarea
             className="inputForm-textarea"
             onChange={(e: any) => this.handleChangeDescription(e)}
             name="inputDescription"
             placeholder="Descreva essa tarefa"
-            value={this.state.inputDescription}
+            value={inputDescription}
           />
           <div>
             <label htmlFor="initialDate">Data/Hora inicial</label>
@@ -122,14 +124,14 @@ export default class Form extends Component<Props, State> {
               type="date"
               name="initialDate"
               placeholder=""
-              value={this.state.initialDate}
+              value={initialDate}
             />
             <Input
               onChange={(e: any) => this.handleChangeInitialTime(e)}
               type="time"
               name="initialTime"
               placeholder=""
-              value={this.state.initialTime}
+              value={initialTime}
             />
           </div>
           <div>
@@ -139,14 +141,14 @@ export default class Form extends Component<Props, State> {
               type="date"
               name="finalDate"
               placeholder=""
-              value={this.state.finalDate}
+              value={finalDate}
             />
             <Input
               onChange={(e: any) => this.handleChangeFinalTime(e)}
               type="time"
               name="finalTime"
               placeholder=""
-              value={this.state.finalTime}
+              value={finalTime}
             />
           </div>
           <button
