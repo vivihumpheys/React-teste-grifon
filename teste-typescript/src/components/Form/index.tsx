@@ -61,11 +61,25 @@ export default class Form extends Component<Props, State> {
 
   handleClick(e: any) {
     e.preventDefault();
-    let inputToDo: string = this.state.inputToDo;
-    let newItems: any = this.state.toDoList.concat(inputToDo);
+    const item: object = {
+      inputToDo: this.state.inputToDo,
+      inputDescription: this.state.inputDescription,
+      initialDate: this.state.initialDate,
+      initialTime: this.state.initialTime,
+      finalDate: this.state.finalDate,
+      finalTime: this.state.finalTime,
+    };
+    
+    console.log(item);
+
+    const listaToDo: any = this.state.toDoList;
+    listaToDo.push(item);
+
+    console.log(listaToDo);
+    console.log(this.state.toDoList);
+
     this.setState({
       inputToDo: "",
-      toDoList: newItems,
       inputDescription: "",
       initialDate: "",
       initialTime: "",
@@ -82,6 +96,7 @@ export default class Form extends Component<Props, State> {
       initialTime,
       finalDate,
       finalTime,
+      toDoList,
     } = this.state;
     return (
       <main>
@@ -142,21 +157,26 @@ export default class Form extends Component<Props, State> {
             Adicionar
           </button>
         </form>
+
         <div className="toDoList-container--box">
           <ul className="toDoList-container">
             <h2>Minhas Tarefas:</h2>
-            <li className="toDoList-item">
-              <h3>{inputToDo}</h3>
-              <p>{inputDescription}</p>
-              <div className="toDoList-item--dateTime">
-                <h4>{initialDate}</h4>
-                <h5>{initialTime}</h5>
-              </div>
-              <div className="toDoList-item--dateTime">
-                <h4>{finalDate}</h4>
-                <h5>{finalTime}</h5>
-              </div>
-            </li>
+            {toDoList.map((item: any) => {
+              return (
+                <li className="toDoList-item">
+                  <h3>{item.inputToDo}</h3>
+                  <p>{item.inputDescription}</p>
+                  <div className="toDoList-item--dateTime">
+                    <h4>{item.initialDate}</h4>
+                    <h5>{item.initialTime}</h5>
+                  </div>
+                  <div className="toDoList-item--dateTime">
+                    <h4>{item.finalDate}</h4>
+                    <h5>{item.finalTime}</h5>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
 
